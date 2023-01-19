@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Criptografia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">   
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" href="imagens/favicon1.png">
+</head>
+<body>
+    <main class="main container">
+        <header class="cabecalho">
+            <i class="fa-sharp fa-solid fa-spaghetti-monster-flying"></i>
+        </header>
+
+        <div class="container-input">
+            <div class="input">
+                <textarea id="input-texto" placeholder="Digite o seu texto aqui:" style="color: #20abfa;"></textarea>
+                <table><tr><td> <i class="fa-solid fa-circle-exclamation"></i></td><td><p>Apenas letras minúsculas e sem acento</p></td></tr></table>
+            </div>
+            <div id="output">
+                <img src="imagens/iara1.png" alt="Imagem do texto">
+                <h3>Sua mensagem aparecerá aqui!</h3>
+                <span>Digite  um texto que deseja criptografarou descriptografar</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <div class="container-btn">
+                <button onclick="criptografar()" class="btn-criptografar">Criptografar</button>
+                <button onclick="descriptografar()" class="btn-descriptografar">Descriptografar</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
